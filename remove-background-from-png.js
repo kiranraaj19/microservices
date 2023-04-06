@@ -1,5 +1,7 @@
-const fs = require('fs');
-const PNG = require('pngjs').PNG;
+import fs from 'fs';
+import p from 'pngjs';
+
+const PNG = p.PNG
 
 async function removeBackgroundFromPNG(sourcePath, destinationPath) {
   try {

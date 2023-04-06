@@ -14,6 +14,7 @@ RUN npm install
 COPY merge-pdf.js ./
 COPY convert-jpg-to-png.js ./
 COPY remove-background-from-png.js ./
+COPY start.js ./
 
 # Set the default command for the container
-CMD [ "node" ]
+CMD [ "node", "start.js" ]
